@@ -1,0 +1,110 @@
+.main__container {
+  width: 90%;
+  height: auto;
+  /* color: var(--cor-fundo); */
+  font-size: var(--fonte-nome-usuario);
+}
+
+.primary__container {
+
+}
+
+.user__container {
+
+}
+
+.user__profile {
+
+}
+
+.user__image {
+  height: 3.125rem;
+}
+
+.user__name{
+
+}
+
+.user__office {
+
+}
+
+.user__form {
+
+}
+
+.userForm__title {
+
+}
+
+.userForm__text {
+
+}
+
+.userForm__submit {
+
+}
+
+/* sugestões para seguir */
+
+.suggestions__container {
+
+}
+
+.secondary__container__title {
+
+}
+
+.suggestions__title {
+
+}
+
+.suggestions__list {
+
+}
+
+.suggestions__item {
+
+}
+
+.item__user {
+
+}
+
+.item__follow {
+
+}
+
+/* secondary container */
+
+.secondary__container {
+
+}
+
+.posts__container {
+
+}
+
+.post__title {
+
+}
+
+.post__text {
+
+}
+
+.post__footer {
+
+}
+
+.post__option {
+
+}
+
+.post__image {
+
+}
+
+.post__like {
+
+}
