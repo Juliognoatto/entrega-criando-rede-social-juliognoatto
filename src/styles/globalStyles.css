@@ -1,3 +1,47 @@
 :root {
-  --fonte-nome-usuario: 600 1.25rem 1.5rem;
+  /* --title1: 700 1.75rem/2.5rem; */
+  --title1-font-weight: 700;
+  --title1-font-size: 1.75rem;
+  --title1-line-height: 2.5rem;
+
+  /* --title2: 600 1.25rem/1.5rem; */
+
+  --title2-font-weight: 600;
+  --title2-font-size: 1.25rem;
+  --title2-line-height: 1.5rem;
+
+  /* --text1: 400 1rem/1.75rem; */
+
+  --text1-font-weight: 400;
+  --text1-font-size: 1rem;
+  --text1-line-height: 1.75rem;
+
+  /* --text2: 400 0.875rem/1rem; */
+
+  --text2-font-weight: 400;
+  --text2-font-size: 0.875rem;
+  --text2-line-height: 1rem;
+
+  /* --text3: 400 0.75rem/1rem; */
+
+  --text3-font-weight: 400;
+  --text3-font-size: 0.75rem;
+  --text3-line-height: 1rem;
+
+  /* botoes */
+
+  --button-post-cor-de-fundo: #4263eb;
+  --button-post-cor-da-fonte: #ffffff;     
+
+  --button-follow-cor-de-fundo: #ffffff;
+  --button-follow-cor-da-fonte: #212529;  
+  --button-follow-cor-da-borda: #212529;
+
+  --button-openPost-cor-de-fundo: #212529;
+  --button-openPost-cor-da-fonte: #ffffff; 
+
+    /* algumas corres da pagina */
+  --header-color: #212529;
+  --office-color: #495057; 
 }
+

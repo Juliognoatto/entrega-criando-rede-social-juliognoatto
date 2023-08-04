@@ -8,8 +8,9 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./src/styles/reset.css" />
     <link rel="stylesheet" href="./src/styles/index.css" />
-    <link rel="stylesheet" href="./src/styles/globalStyles.css">
-    <link rel="stylesheet" href="./src/styles/text.css">
+    <link rel="stylesheet" href="./src/styles/globalStyles.css" />
+    <link rel="stylesheet" href="./src/styles/text.css" />
+    <link rel="stylesheet" href="./src/styles/button.css" />
 
     <!-- FONTE -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -25,7 +26,7 @@
     <!-- HEADER -->
     <header class="header__container">
       <img class="header__image" src="./src/assets/img/logo.svg" alt="" />
-      <p class="header__option">Sair</p>
+      <p class="header__option text2--bold">Sair</p>
     </header>
 
     <!-- CONTEÚDO PRINCIPAL -->
@@ -37,8 +38,8 @@
           <div class="user__profile">
             <img class="user__image" src="./src/assets/img/user1.svg" alt="Samuel" />
             <div>
-              <h2 class="user__name">Samuel Leão</h2>
-              <p class="user__office">Front end Engineer</p>
+              <h2 class="title2">Samuel Leão</h2>
+              <p class="text2">Front end Engineer</p>
             </div>
           </div>
 
@@ -57,46 +58,46 @@
               rows="10"
               required=""
             ></textarea>
-            <button class="userForm__submit" type="submit">Postar</button>
+            <button class="userForm__submit text2--bold" type="submit">Postar</button>
           </form>
         </section>
 
         <!-- SUGESTÕES PARA SEGUIR -->
         <section class="suggestions__container">
-          <h2 class="suggestions__title">Sugestões para você seguir</h2>
+          <h2 class="title2 suggestions--title">Sugestões para você seguir</h2>
           <ul class="suggestions__list">
             <!-- SUGESTÃO 1 -->
             <li class="suggestions__item">
-              <div class="item__user">
+              <div class="item__user small--screen">
                 <img class="user__image" src="./src/assets/img/user2.svg" alt="Carlos Lima" />
                 <div>
-                  <h2 class="user__name">Carlos Lima</h2>
-                  <p class="user__office">UX e UI Designer</p>
+                  <h2 class="title2">Carlos Lima</h2>
+                  <p class="text2">UX e UI Designer</p>
                 </div>
               </div>
-              <button class="item__follow">Seguir</button>
+              <button class="item__follow text2--bold">Seguir</button>
             </li>
             <!-- SUGESTÃO 2 -->
             <li class="suggestions__item">
-              <div class="item__user">
+              <div class="item__user small--screen">
                 <img class="user__image" src="./src/assets/img/user3.svg" alt="Rafael Bertoldo" />
                 <div>
-                  <h2 class="user__name">Rafael Bertoldo</h2>
-                  <p class="user__office">Devop's</p>
+                  <h2 class="title2">Rafael Bertoldo</h2>
+                  <p class="text2">Devop's</p>
                 </div>
               </div>
-              <button class="item__follow">Seguir</button>
+              <button class="item__follow text2--bold" >Seguir</button> 
             </li>
             <!-- SUGESTÃO 3 -->
             <li class="suggestions__item">
-              <div class="item__user">
+              <div class="item__user small--screen">
                 <img class="user__image" src="./src/assets/img/user4.svg" alt="Júlia Martins" />
                 <div>
-                  <h2 class="user__name">Júlia Martins</h2>
-                  <p class="user__office">Fullstack Engineer</p>
+                  <h2 class="title2">Júlia Martins</h2>
+                  <p class="text2">Fullstack Engineer</p>
                 </div>
               </div>
-              <button class="item__follow">Seguir</button>
+              <button class="item__follow text2--bold">Seguir</button>
             </li>
           </ul>
         </section>
@@ -104,21 +105,21 @@
 
       <!-- ÁREA 2 (LISTAGEM DE POSTS) -->
       <section class="secondary__container">
-        <h2 class="secondary__container__title">Posts</h2>
+        <h2 class="title1">Posts</h2>
         <!-- POST 1 -->
         <article class="post__container">
-          <div>
+          <div class="item__user">
             <img class="user__image" src="./src/assets/img/user5.svg" alt="Iris Silva" />
             <div>
-              <h2 class="user__name">Iris Silva</h2>
-              <p class="user__office">Front end Engineer</p>
+              <h2 class="title2">Iris Silva</h2>
+              <p class="text2">Front end Engineer</p>
             </div>
           </div>
-          <h2 class="post__title">
+          <h2 class="title1">
             Empresa de Tecnologia da Informação abre vagas para programa de
             estágio
           </h2>
-          <p class="post__text">
+          <p class="text1">
             A Framework Digital, empresa mineira especializada em Tecnologia da
             Informação, irá iniciar o seu sexto programa de estágio, com o prazo
             de inscrições entre os dias 08 e 28 de agosto. O programa é
@@ -127,8 +128,8 @@
             cavaleiros Jedi, que compõem o lado bom da força.
           </p>
           <div class="post__footer">
-            <button class="post__option">Abrir Post</button>
-            <div>
+            <button class="post__option text2--bold">Abrir Post</button>
+            <div class="post__info">
               <img class="post__image"
                 src="./src/assets/img/gray-heart.svg"
                 alt="Empty Heart(Post not liked)"
@@ -140,18 +141,18 @@
 
         <!-- POST 2 -->
         <article class="post__container">
-          <div>
+          <div class="item__user">
             <img class="user__image" src="./src/assets/img/user6.svg" alt="Carla Maria" />
             <div>
-              <h2 class="user__name">Carla Maria</h2>
-              <p class="user__office">Back end Engineer</p>
+              <h2 class="title2">Carla Maria</h2>
+              <p class="text2">Back end Engineer</p>
             </div>
           </div>
-          <h2 class="post__title">
+          <h2 class="title1">
             Programa de estágio abre vagas em Segurança da Informação com regime
             remoto
           </h2>
-          <p class="post__text">
+          <p class="text1">
             Em Segurança da Informação, as vagas são destinadas às áreas de
             Security Operations Center (SOC), Administração de Dispositivos de
             Segurança (ADS), Resposta a Incidentes (RI), Segurança e Privacidade
@@ -161,8 +162,8 @@
             conclusão do curso de fevereiro de 2023 a fevereiro de 2025.
           </p>
           <div class="post__footer">
-            <button class="post__option">Abrir Post</button>
-            <div>
+            <button class="post__option text2--bold">Abrir Post</button>
+            <div class="post__info">
               <img class="post__image"
                 src="./src/assets/img/gray-heart.svg"
                 alt="Empty Heart(Post not liked)"
@@ -174,17 +175,17 @@
 
         <!-- POST 3 -->
         <article class="post__container">
-          <div>
+          <div class="item__user">
             <img class="user__image" src="./src/assets/img/user7.svg" alt="João Carvalho" />
             <div>
-              <h2 class="post__name">João Carvalho</h2>
-              <p class="post__office">Devop's</p>
+              <h2 class="title2">João Carvalho</h2>
+              <p class="text2">Devop's</p>
             </div>
           </div>
-          <h2 class="post__title">
+          <h2 class="title1">
             O que é programação orientada a objetos e programação funcional
           </h2>
-          <p class="post__text">
+          <p class="text1">
             A Programação Funcional é uma orientação focada na programação
             declarativa. Conhecendo mais a programação funcional a partir de
             códigos podemos nos deparar de primeira com o conceito mais central
@@ -197,8 +198,8 @@
             vão para o objeto), e isso tem seu lado bom e ruim.
           </p>
           <div class="post__footer">
-            <button class="post__option">Abrir Post</button>
-            <div>
+            <button class="post__option text2--bold">Abrir Post</button>
+            <div class="post__info">
               <img class="post__image"
                 src="./src/assets/img/gray-heart.svg"
                 alt="Empty Heart(Post not liked)"
