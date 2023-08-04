@@ -120,6 +120,24 @@
 }
 
 @media (max-width: 1025px) {
+  
+  .header__container {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    justify-content: space-between;
+    background-color: var(--header-color);
+    margin-bottom: 3rem;
+  }
+  
+  .header__image,
+  .header__option {
+    padding: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+
   .mainContainer {
     display: flex;
     justify-content: center;
@@ -152,6 +170,8 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
+    white-space: nowrap; 
+    overflow-x: auto;
   }
 
   .suggestions__item {
