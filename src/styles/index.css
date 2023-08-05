@@ -152,6 +152,7 @@
     align-items: center;
     flex-direction: column;
     width: 90%;
+    margin-top: 4rem;
   }
 
   .user__container {

@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="./src/styles/globalStyles.css" />
     <link rel="stylesheet" href="./src/styles/text.css" />
     <link rel="stylesheet" href="./src/styles/button.css" />
+    <link rel="stylesheet" href="./src/styles/dialog.css">
+    
 
     <!-- FONTE -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -21,8 +23,11 @@
     />
 
     <title>Criando rede social</title>
+
+    
+
   </head>
-  <body>
+  <body class="body" id="body">
     <!-- HEADER -->
     <header class="header__container">
       <img class="header__image" src="./src/assets/img/logo.svg" alt="" />
@@ -122,13 +127,9 @@
           <p class="text1">
             A Framework Digital, empresa mineira especializada em Tecnologia da
             Informação, irá iniciar o seu sexto programa de estágio, com o prazo
-            de inscrições entre os dias 08 e 28 de agosto. O programa é
-            conhecido como Framework Padawans, com inspiração nos filmes Star
-            Wars. Nas histórias, os iniciantes fazem treinamentos para se tornar
-            cavaleiros Jedi, que compõem o lado bom da força.
           </p>
           <div class="post__footer">
-            <button class="post__option text2--bold">Abrir Post</button>
+            <button id="openDialog1" class="post__option text2--bold">Abrir Post</button>
             <div class="post__info">
               <img class="post__image"
                 src="./src/assets/img/gray-heart.svg"
@@ -155,14 +156,9 @@
           <p class="text1">
             Em Segurança da Informação, as vagas são destinadas às áreas de
             Security Operations Center (SOC), Administração de Dispositivos de
-            Segurança (ADS), Resposta a Incidentes (RI), Segurança e Privacidade
-            e Consultoria Técnica. O candidato interessado deverá estar
-            matriculado em um curso superior em Ciência da Computação, Segurança
-            da Informação, Tecnologia da Informação e afins, com previsão de
-            conclusão do curso de fevereiro de 2023 a fevereiro de 2025.
           </p>
           <div class="post__footer">
-            <button class="post__option text2--bold">Abrir Post</button>
+            <button id="openDialog2" class="post__option text2--bold">Abrir Post</button>
             <div class="post__info">
               <img class="post__image"
                 src="./src/assets/img/gray-heart.svg"
@@ -188,17 +184,9 @@
           <p class="text1">
             A Programação Funcional é uma orientação focada na programação
             declarativa. Conhecendo mais a programação funcional a partir de
-            códigos podemos nos deparar de primeira com o conceito mais central
-            da programação funcional, que é o conceito de funções puras, isso
-            significa que o retorno de uma função deve depender apenas dos seus
-            parâmetros de entrada. Com classes podemos editar os valores das
-            propriedades dos objetos criados ou ainda criar métodos para essas
-            propriedades, ainda por cima podemos definir se vão ser públicos
-            (vão para o objeto) ou estáticos (não são instanciados, ou seja, não
-            vão para o objeto), e isso tem seu lado bom e ruim.
           </p>
           <div class="post__footer">
-            <button class="post__option text2--bold">Abrir Post</button>
+            <button id="openDialog3" class="post__option text2--bold">Abrir Post</button>
             <div class="post__info">
               <img class="post__image"
                 src="./src/assets/img/gray-heart.svg"
@@ -208,7 +196,87 @@
             </div>
           </div>
         </article>
+
+        <!-- dialogs -->
+        <section id="dialogs" class="dialogs">
+
+          <dialog id="modal1" class="modal">
+            <div class="modal__content">
+              <div class="modal__content cabecalho">
+                <img class="user__image" src="./src/assets/img/user6.svg" alt="Carla Maria" />
+                <h2 class="title2">Iris Silva</h2>
+                <p class="text2">Front end Engineer</p>
+              </div>
+              <button id="closeModal1" class="close__button">&times;</button>
+              <h2 class="title1">
+                Programa de estágio abre vagas em Segurança da Informação com regime
+              remoto
+              </h2>
+              <p class="text1">
+                A Framework Digital, empresa mineira especializada em Tecnologia da
+                Informação, irá iniciar o seu sexto programa de estágio, com o prazo
+                de inscrições entre os dias 08 e 28 de agosto. O programa é
+                conhecido como Framework Padawans, com inspiração nos filmes Star
+                Wars. Nas histórias, os iniciantes fazem treinamentos para se tornar
+                cavaleiros Jedi, que compõem o lado bom da força.
+              </p>
+            </div>
+          </dialog>
+
+          <dialog id="modal2" class="modal">
+            <div class="modal__content">
+              <div class="modal__content cabecalho">
+                <img class="user__image" src="./src/assets/img/user6.svg" alt="Carla Maria" />
+                <h2 class="title2">Carla Maria</h2>
+                <p class="text2">Back end Engineer</p>
+              </div>
+              <button id="closeModal2" class="close__button">&times;</button>
+              <h2 class="title1">
+                Programa de estágio abre vagas em Segurança da Informação com regime
+              remoto
+              </h2>
+              <p class="text1">
+                Em Segurança da Informação, as vagas são destinadas às áreas de
+                Security Operations Center (SOC), Administração de Dispositivos de
+                Segurança (ADS), Resposta a Incidentes (RI), Segurança e Privacidade
+                e Consultoria Técnica. O candidato interessado deverá estar
+                matriculado em um curso superior em Ciência da Computação, Segurança
+                da Informação, Tecnologia da Informação e afins, com previsão de
+                conclusão do curso de fevereiro de 2023 a fevereiro de 2025.
+              </p>
+            </div>
+          </dialog>
+
+
+          <dialog id="modal3" class="modal">
+            <div class="modal__content">
+              <div class="modal__content cabecalho">
+                <img class="user__image" src="./src/assets/img/user7.svg" alt="João Carvalho" />
+                <h2 class="title2">João Carvalho</h2>
+                <p class="text2">Devop's</p>
+              </div>
+              <button id="closeModal3" class="close__button">&times;</button>
+              <h2 class="title1">
+                O que é programação orientada a objetos e programação funcional
+              </h2>
+              <p class="text1">
+                A Programação Funcional é uma orientação focada na programação
+                declarativa. Conhecendo mais a programação funcional a partir de
+                códigos podemos nos deparar de primeira com o conceito mais central
+                da programação funcional, que é o conceito de funções puras, isso
+                significa que o retorno de uma função deve depender apenas dos seus
+                parâmetros de entrada. Com classes podemos editar os valores das
+                propriedades dos objetos criados ou ainda criar métodos para essas
+                propriedades, ainda por cima podemos definir se vão ser públicos
+                (vão para o objeto) ou estáticos (não são instanciados, ou seja, não
+                vão para o objeto), e isso tem seu lado bom e ruim.
+              </p>
+            </div>
+          </dialog>
+        </section>
+        
       </section>
     </main>
+    <script src="./src/scripts/index.js"></script>
   </body>
 </html>
