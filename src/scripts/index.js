@@ -15,10 +15,12 @@ const closeModalButton3 = document.getElementById('closeModal3');
 
 openDialogButton1.addEventListener('click', () => {
     modal1.style.display = 'block';
+    modal1.classList.add('active');
 });
 
 closeModalButton1.addEventListener('click', () => {
     modal1.style.display = 'none';
+    modal1.classList.remove('active');
 });
 
 window.addEventListener('click', (event) => {
@@ -55,8 +57,21 @@ window.addEventListener('click', (event) => {
   }
 });
 
-// const mudaBackground = document.getElementById('post__option');
-// const Background = document.getElementById('body')
-// mudaBackground.addEventListener("change", function() {
+// // Referências aos elementos
+// const openModalButton = document.getElementById('openDialog1');
+// const modalBackground = document.getElementById('modal1');
+// const modal = document.getElementById('modal2');
 
+// // Função para abrir o diálogo
+// function openModal() {
+//   modal.showModal();
+//   modalBackground.classList.add('active');
 // }
+
+// // Evento de clique no botão para abrir o diálogo
+// openModalButton.addEventListener('click', openModal);
+
+// // Evento de clique no botão de fechar diálogo
+// modal.addEventListener('close', () => {
+//   modalBackground.classList.remove('active');
+// });
